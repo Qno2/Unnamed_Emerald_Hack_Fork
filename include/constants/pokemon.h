@@ -251,7 +251,7 @@
 #define EVO_LEVEL                         4      // Pokémon reaches the specified level
 #define EVO_TRADE                         5      // Pokémon is traded
 #define EVO_TRADE_ITEM                    6      // Pokémon is traded while it's holding the specified item
-#define EVO_ITEM                          7      // specified item is used on Pokémon
+#define EVO_ITEM                          7      // Specified item is used on Pokémon
 #define EVO_LEVEL_ATK_GT_DEF              8      // Pokémon reaches the specified level with attack > defense
 #define EVO_LEVEL_ATK_EQ_DEF              9      // Pokémon reaches the specified level with attack = defense
 #define EVO_LEVEL_ATK_LT_DEF              10     // Pokémon reaches the specified level with attack < defense
@@ -270,8 +270,8 @@
 #define EVO_MOVE                          23     // Pokémon levels up, knows specified move
 #define EVO_FRIENDSHIP_MOVE_TYPE          24     // Pokémon levels up with friendship ≥ 220, knows move with specified type
 #define EVO_MAPSEC                        25     // Pokémon levels up on specified mapsec
-#define EVO_ITEM_MALE                     26     // specified item is used on a male Pokémon
-#define EVO_ITEM_FEMALE                   27     // specified item is used on a female Pokémon
+#define EVO_ITEM_MALE                     26     // Specified item is used on a male Pokémon
+#define EVO_ITEM_FEMALE                   27     // Specified item is used on a female Pokémon
 #define EVO_LEVEL_RAIN                    28     // Pokémon reaches the specified level during rain in the overworld
 #define EVO_SPECIFIC_MON_IN_PARTY         29     // Pokémon levels up with a specified Pokémon in party
 #define EVO_LEVEL_DARK_TYPE_MON_IN_PARTY  30     // Pokémon reaches the specified level with a Dark Type Pokémon in party
@@ -281,10 +281,10 @@
 #define EVO_LEVEL_NATURE_LOW_KEY          34     // Pokémon reaches the specified level, it has a Lonely, Bold, Relaxed, Timid, Serious, Modest, Mild, Quiet, Bashful, Calm, Gentle, or Careful nature.
 #define EVO_CRITICAL_HITS                 35     // Pokémon performs specified number of critical hits in one battle
 #define EVO_SCRIPT_TRIGGER_DMG            36     // Pokémon has specified HP below max, then player interacts trigger
-#define EVO_DARK_SCROLL                   37     // interacts with Scroll of Darkness
-#define EVO_WATER_SCROLL                  38     // interacts with Scroll of Waters
-#define EVO_ITEM_NIGHT                    39     // specified item is used on Pokémon, is night
-#define EVO_ITEM_DAY                      40     // specified item is used on Pokémon, is day
+#define EVO_DARK_SCROLL                   37     // Interacts with Scroll of Darkness
+#define EVO_WATER_SCROLL                  38     // Interacts with Scroll of Waters
+#define EVO_ITEM_NIGHT                    39     // Specified item is used on Pokémon, is night
+#define EVO_ITEM_DAY                      40     // Specified item is used on Pokémon, is day
 #define EVO_ITEM_HOLD                     41     // Pokémon levels up, holds specified item
 #define EVO_LEVEL_FOG                     42     // Pokémon reaches the specified level during fog in the overworld
 #define EVO_MOVE_TWO_SEGMENT              43     // Pokémon levels up, knows specified move, has a personality value with a modulus of 0
