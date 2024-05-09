@@ -11,6 +11,8 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	call Common_EventScript_PlayerHandedOverTheItem
 	setflag FLAG_DELIVERED_STEVEN_LETTER
 	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_STEVEN_DEWFORD, GraniteCave_StevensRoom_Text_StevenDefeat
+	msgbox GraniteCave_StevensRoom_Text_AfterBattle
 	giveitem ITEM_TM_STEEL_WING
 	call_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull
 	msgbox GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT
@@ -93,6 +95,17 @@ GraniteCave_StevensRoom_Text_ThankYouTakeThis:
 	.string "You went through all this trouble to\n"
 	.string "deliver that. I need to thank you.\p"
 	.string "Let me see…\n"
+	.string "Oh I know, how about we have a quick\n"
+	.string "battle to get to know each other?\p"
+	.string "I hope you can show me what you've\n"
+	.string "got.$"
+
+GraniteCave_StevensRoom_Text_StevenDefeat:
+	.string "Looks like my steel types were\n"
+	.string "no match for you.$"
+
+GraniteCave_StevensRoom_Text_AfterBattle:
+	.string "Yup. I suspected you'd be strong\n"	
 	.string "I'll give you this TM.\p"
 	.string "It contains my favorite move,\n"
 	.string "STEEL WING.$"

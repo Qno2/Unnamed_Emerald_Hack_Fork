@@ -21318,7 +21318,7 @@ static const u16 sCrawdauntTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
-    MOVE_EARTHQUAKE
+    MOVE_EARTHQUAKE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CORPHISH
@@ -22347,7 +22347,7 @@ static const u16 sAbsolTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
     MOVE_THUNDER_WAVE,
-    MOVE_PSYCHO_CUT
+    MOVE_PSYCHO_CUT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ABSOL

@@ -399,3 +399,91 @@ OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"
 	.string "“Where things start off scarce.”$"
 
+
+OldaleTown_EventScript_ReceiveOtherStarters::
+	lock
+	faceplayer
+	goto_if_set FLAG_UNUSED_0x265, OldaleTown_EventScript_GivenStarters
+	msgbox Text_TakeHoennStarters, MSGBOX_DEFAULT
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_gt OldaleTown_EventScript_PartyFull
+	compare VAR_STARTER_MON, 0
+	goto_if_eq OldaleTown_Eventscript_GiftWhenTreecko
+	compare VAR_STARTER_MON, 1
+	goto_if_eq OldaleTown_Eventscript_GiftWhenTorchic
+	compare VAR_STARTER_MON, 2
+	goto_if_eq OldaleTown_Eventscript_GiftWhenMudkip
+	end
+
+OldaleTown_EventScript_PartyFull::
+	msgbox Text_PartyFull, MSGBOX_DEFAULT
+	release
+	end
+
+OldaleTown_Eventscript_GiftWhenTreecko::
+	givemon SPECIES_TORCHIC, 5, ITEM_NONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Text_ReceivedTorchic, MSGBOX_DEFAULT
+	waitfanfare
+	givemon SPECIES_MUDKIP, 5, ITEM_NONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Text_ReceivedMudkip, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_UNUSED_0x265
+	msgbox Text_GivenStarters, MSGBOX_DEFAULT
+	release
+	end
+
+OldaleTown_Eventscript_GiftWhenTorchic::
+	givemon SPECIES_TREECKO, 5, ITEM_NONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Text_ReceivedTreecko, MSGBOX_DEFAULT
+	waitfanfare
+	givemon SPECIES_MUDKIP, 5, ITEM_NONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Text_ReceivedMudkip, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_UNUSED_0x265
+	msgbox Text_GivenStarters, MSGBOX_DEFAULT
+	release
+	end
+
+OldaleTown_Eventscript_GiftWhenMudkip::
+	givemon SPECIES_TREECKO, 5, ITEM_NONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Text_ReceivedTreecko, MSGBOX_DEFAULT
+	waitfanfare
+	givemon SPECIES_TORCHIC, 5, ITEM_NONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Text_ReceivedTorchic, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_UNUSED_0x265
+	msgbox Text_GivenStarters, MSGBOX_DEFAULT
+	release
+	end
+
+OldaleTown_EventScript_GivenStarters::
+	msgbox Text_GivenStarters, MSGBOX_DEFAULT
+	release
+	end
+
+Text_TakeHoennStarters:
+	.string "Here kid, these extra starters\n"
+	.string "might help you out.$"
+
+Text_PartyFull:
+	.string "Ah, you don't have space in\n"
+	.string "your party...$"
+
+Text_ReceivedTreecko:
+	.string "{PLAYER} received a Treecko!$"
+
+Text_ReceivedTorchic:
+	.string "{PLAYER} received a Torchic!$"
+
+Text_ReceivedMudkip:
+	.string "{PLAYER} received a Mudkip!$"
+
+Text_GivenStarters:
+	.string "Go get'em kid.$"

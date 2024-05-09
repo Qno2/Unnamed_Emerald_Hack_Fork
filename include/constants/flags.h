@@ -653,10 +653,10 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
 #define FLAG_UNUSED_0x264  0x264 // EXP flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
+#define FLAG_UNUSED_0x265  0x265 // Hoenn Starter Gift Flag
+#define FLAG_UNUSED_0x266  0x266 // Kanto Starter Gift Flag
+#define FLAG_UNUSED_0x267  0x267 // Johto Starter Gift Flag
+#define FLAG_WALLY_PETALBURG  0x268 // Flag for new Wally battle
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag

@@ -765,3 +765,124 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
 	.string "talented TRAINERS.\p"
 	.string "I'm sorry to have taken your time.$"
+
+
+PetalburgCity_EventScript_ReceiveKantoStarters::
+	lock
+	faceplayer
+	goto_if_set FLAG_UNUSED_0x266, PetalburgCity_EventScript_GivenStarters
+	msgbox Text_TakeKantoStarters, MSGBOX_DEFAULT
+	getpartysize
+	compare VAR_RESULT, 3
+	goto_if_gt PetalburgCity_EventScript_PartyFull
+	givemon SPECIES_BULBASAUR, 8, ITEM_NONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Text_ReceivedBulbasaur, MSGBOX_DEFAULT
+	waitfanfare
+	givemon SPECIES_CHARMANDER, 8, ITEM_NONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Text_ReceivedCharmander, MSGBOX_DEFAULT
+	waitfanfare
+	givemon SPECIES_SQUIRTLE, 8, ITEM_NONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Text_ReceivedSquirtle, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_UNUSED_0x266
+	msgbox Text_GivenStartersPetalburg, MSGBOX_DEFAULT
+	release
+	end
+
+PetalburgCity_EventScript_GivenStarters::
+	msgbox Text_GivenStartersPetalburg, MSGBOX_DEFAULT
+	release
+	end
+
+PetalburgCity_EventScript_PartyFull::
+	msgbox Text_PartyFullPetalburg, MSGBOX_DEFAULT
+	release
+	end
+
+Text_TakeKantoStarters:
+	.string "Oh wow, are you a new trainer?\n"
+	.string "Do I have an oppertunity for you.\p"
+	.string "Hopefully you've heard of the\n"
+	.string "Kanto region?\p"
+	.string "Good. I've got some nice Pokemon\n"
+	.string "from that region.\p"
+	.string "They can be yours if you promise\n"
+	.string "that you can become Champion\p"
+	.string "You can do that? Great.\n"
+	.string "Here you are.$" 
+
+Text_PartyFullPetalburg:
+	.string "Ah, you don't have space in\n"
+	.string "your party...$"
+
+Text_ReceivedBulbasaur:
+	.string "{PLAYER} received a Bulbasaur!$"
+
+Text_ReceivedCharmander:
+	.string "{PLAYER} received a Charmander!$"
+
+Text_ReceivedSquirtle:
+	.string "{PLAYER} received a Squirtle!$"
+
+Text_GivenStartersPetalburg:
+	.string "Remember our deal now.$"
+
+
+PetalburgCity_EventScript_WallyBattle::
+	lockall
+	setobjectxyperm LOCALID_WALLY, 15, 16
+	addobject LOCALID_WALLY
+	goto_if_set FLAG_WALLY_PETALBURG, PetalburgCity_EventScript_NoWally
+	applymovement LOCALID_WALLY, PetalburgCity_Movement_WallyEnters
+	waitmovement LOCALID_WALLY
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_FaceWally
+	msgbox PetalburgCity_Text_WallyBeforeBattle, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_WALLY_PETALBURG, PetalburgCity_Text_WallyDefeat
+	msgbox PetalburgCity_Text_WallyAfterBattle, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_WALLY
+	fadescreen FADE_FROM_BLACK
+	setflag FLAG_WALLY_PETALBURG
+	releaseall
+	end
+
+PetalburgCity_EventScript_NoWally::
+	removeobject LOCALID_WALLY
+	end
+
+PetalburgCity_Movement_WallyEnters:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+PetalburgCity_Movement_FaceWally:
+	face_down
+	step_end
+
+PetalburgCity_Text_WallyBeforeBattle:
+	.string "Hello {PLAYER}. It's good to\n"
+	.string "see you again.\p"
+	.string "I... I've gotten stronger than\n"
+	.string "when you last battled me.\p"
+	.string "I want to see how much stronger\n"
+	.string "I've gotten before challenging\l"
+	.string "Mr Norman./p"
+	.string "Please don't hold back.$"
+
+PetalburgCity_Text_WallyAfterBattle:
+	.string "...I worked so hard but you\n"
+	.string "are still stronger than me.\p"
+	.string "Looks like me and my Pokemon\n"
+	.string "need to double our training.\p"
+	.string "Ok {Player}, next time we meet,\n"
+	.string "Let's battle again.$"
+
+PetalburgCity_Text_WallyDefeat:
+	.string "I lost...$"
