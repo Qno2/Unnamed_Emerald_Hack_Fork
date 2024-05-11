@@ -1306,7 +1306,7 @@ RustboroCity_EventScript_ReceiveJohtoStarters::
 	msgbox Text_TakeJohtoStarters, MSGBOX_DEFAULT
 	getpartysize
 	compare VAR_RESULT, 3
-	goto_if_gt RustboroCity_EventScript_PartyFull::
+	goto_if_gt RustboroCity_EventScript_PartyFull
 	givemon SPECIES_CHIKORITA, 13, ITEM_NONE
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Text_ReceivedChikorita, MSGBOX_DEFAULT
@@ -1358,3 +1358,4 @@ Text_ReceivedTotodile:
 
 Text_GivenStartersRustboro:
 	.string "Wait, where's my wallet?$"
+

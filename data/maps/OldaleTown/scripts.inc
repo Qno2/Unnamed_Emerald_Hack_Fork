@@ -487,3 +487,12 @@ Text_ReceivedMudkip:
 
 Text_GivenStarters:
 	.string "Go get'em kid.$"
+
+OldaleTown_EventScript_CheatHouseSign::
+	msgbox OldaleTown_Text_CheatHouseSign, MSGBOX_DEFAULT
+	end
+
+OldaleTown_Text_CheatHouseSign:
+	.string "The Cheat House\n"
+	.string "Enter at your own risk.$"
+

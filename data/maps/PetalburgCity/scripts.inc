@@ -881,7 +881,7 @@ PetalburgCity_Text_WallyAfterBattle:
 	.string "are still stronger than me.\p"
 	.string "Looks like me and my Pokemon\n"
 	.string "need to double our training.\p"
-	.string "Ok {Player}, next time we meet,\n"
+	.string "Ok {PLAYER}, next time we meet,\n"
 	.string "Let's battle again.$"
 
 PetalburgCity_Text_WallyDefeat:
