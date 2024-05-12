@@ -1359,3 +1359,36 @@ Text_ReceivedTotodile:
 Text_GivenStartersRustboro:
 	.string "Wait, where's my wallet?$"
 
+
+RustboroCity_EventScript_GiftEevee::
+	lock
+	faceplayer
+	goto_if_set FLAG_EEVEE_WOODS, RustBoroCity_EventScript_GiftBeenGiven
+	msgbox RustboroCity_Text_GiftEevee
+	getpartysize
+	compare VAR_RESULT, 6
+	goto_if_eq RustboroCity_EventScript_PartyFull
+	givemon SPECIES_EEVEE, 10, ITEM_NONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Text_ReceivedEevee, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox RustboroCity_Text_AfterGift, MSGBOX_DEFAULT
+	setflag FLAG_EEVEE_WOODS
+	release
+	end
+
+RustBoroCity_EventScript_GiftBeenGiven::
+	msgbox RustboroCity_Text_AfterGift
+	release
+	end
+
+RustboroCity_Text_GiftEevee:
+	.string "I still have that Pokemon from\n"
+	.string "before that I want to give you.\p"
+	.string "Please take it.$"
+
+Text_ReceivedEevee:
+	.string "{PLAYER} received an Eevee!$"
+
+RustboroCity_Text_AfterGift:
+	.string "Ok. I'll see you around.$"

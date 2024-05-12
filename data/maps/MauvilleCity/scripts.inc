@@ -438,10 +438,15 @@ MauvilleCity_EventScript_CompletedNewMauville::
 	msgbox MauvilleCity_Text_WattsonThanksTakeTM, MSGBOX_DEFAULT
 	giveitem ITEM_TM_THUNDERBOLT
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	givemon SPECIES_PORYGON, ITEM_NONE
+	msgbox Text_ReceivedPorygon, MSGBOX_DEFAULT
 	setflag FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON
 	msgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT
 	release
 	end
+
+Text_ReceivedPorygon:
+	.string "{PLAYER} has received a Porygon!$"
 
 MauvilleCity_EventScript_ReceivedThunderbolt::
 	msgbox MauvilleCity_Text_WattsonYoungTakeCharge, MSGBOX_DEFAULT
@@ -606,6 +611,8 @@ MauvilleCity_Text_WattsonThanksTakeTM:
 	.string "the right choice asking you!\p"
 	.string "This is my thanks--a TM containing\n"
 	.string "THUNDERBOLT!\p"
+	.string "Also, take this Pokemon. It's not\n"
+	.string "ELECTRIC type but it's interesting.\p"
 	.string "Go on, you've earned it!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:

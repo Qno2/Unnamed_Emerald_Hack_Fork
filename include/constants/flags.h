@@ -657,8 +657,8 @@
 #define FLAG_UNUSED_0x266  0x266 // Kanto Starter Gift Flag
 #define FLAG_UNUSED_0x267  0x267 // Johto Starter Gift Flag
 #define FLAG_WALLY_PETALBURG  0x268 // Flag for new Wally battle
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
+#define FLAG_EEVEE_WOODS  0x269 // Flag for if you can't take the Eevee from the Devon employee
+#define FLAG_UNKNOWN_GIFT  0x26A // Flag for the gift Unknown in Mt Pyre
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag

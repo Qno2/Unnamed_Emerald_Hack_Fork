@@ -67,3 +67,35 @@ MtPyre_6F_Text_CedricPostBattle:
 	.string "would be panicked and easy to beat.\p"
 	.string "It's dirty and I won't try it again…$"
 
+
+MtPyre_6F_EventScript_Gift::
+	lock
+	faceplayer
+	goto_if_set FLAG_UNKNOWN_GIFT, MtPyre_6F_EventScript_Given
+	msgbox MtPyre_6F_Text_GiftForYou, MSGBOX_DEFAULT
+	givemon SPECIES_UNOWN, 50, ITEM_TWISTED_SPOON
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Text_ReceivedUnknown, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_UNKNOWN_GIFT
+	msgbox MtPyre_6F_Text_GiftGiven
+	release
+	end
+
+MtPyre_6F_EventScript_Given::
+	msgbox MtPyre_6F_Text_GiftGiven
+	release
+	end
+
+MtPyre_6F_Text_GiftForYou:
+	.string "Ah, you've made it to the\n"
+	.string "top.\p"
+	.string "I have a gift for you.\n"
+	.string "Please take it.$"
+
+Text_ReceivedUnknown:
+	.string "{PLAYER} received an Unown!$"
+
+MtPyre_6F_Text_GiftGiven:
+	.string "I hope you use it well.$"
+
