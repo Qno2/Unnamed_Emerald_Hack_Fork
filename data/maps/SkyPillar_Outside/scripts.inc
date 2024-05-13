@@ -40,6 +40,9 @@ SkyPillar_Outside_EventScript_WallaceScene::
 	waitmovement 0
 	msgbox SkyPillar_Outside_Text_OpenedDoorToSkyPillar, MSGBOX_DEFAULT
 	closemessage
+	trainerbattle_no_intro TRAINER_WALLACE, SkyPillar_Outside_Text_WallaceDefeat
+	msgbox SkyPillar_Outside_Text_AfterBattle, MSGBOX_DEFAULT
+	closemessage
 	delay 30
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 1  @ horizontal pan
@@ -146,6 +149,20 @@ SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
 	.string "WALLACE: Oh, my, I'm terribly sorry!\p"
 	.string "In my haste, I didn't notice that\n"
 	.string "I'd left you behind!\p"
+	.string "There's just one more thing before\n"
+	.string "we proceed.\p"
+	.string "I need to battle you to make sure\n"
+	.string "you are strong enough to handle\l"
+	.string "RAYQUAZA, should you need to.\p"
+	.string "Prepare yourself!$"
+
+SkyPillar_Outside_Text_WallaceDefeat:
+	.string "That was an excellently fought\n"
+	.string "battle.$"
+
+SkyPillar_Outside_Text_AfterBattle:
+	.string "I see Steven's measure of your\n"
+	.string "abilites was on the mark.\p"
 	.string "I've opened the locked door of\n"
 	.string "the SKY PILLAR.\p"
 	.string "{PLAYER}{KUN}, let's be on our way!$"

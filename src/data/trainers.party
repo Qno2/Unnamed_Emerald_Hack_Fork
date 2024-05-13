@@ -6679,53 +6679,59 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Wailord
-Level: 57
+Pelipper @ Damp Rock
+Level: 63
+Ability: Drizzle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Spout
-- Double Edge
-- Blizzard
+- Surf
+- Hurricane
+- Roost
+- Flip Turn
 
-Tentacruel
-Level: 55
+Ludicolo @ Life Orb
+Level: 63
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
 - Hydro Pump
-- Sludge Bomb
+- Energy Ball
 - Ice Beam
+- Psychic
 
-Ludicolo
-Level: 56
+Gorebyss @ Flame Orb
+Level: 64
+Ability: Marvel Scale
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
+- Protect
+- Hydro Pump
+- Moonblast
+- Shadow Ball
+
+Starmie @ Choice Specs
+Level: 64
+Ability: Natural Cure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Surf
-- Leech Seed
-- Double Team
+- Ice Beam
+- Psychic
+- Thunderbolt
 
-Whiscash
-Level: 56
+Corsola @ Rindo Berry
+Level: 64
+Ability: Skill Link
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
-
-Gyarados
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Dance
-- Earthquake
-- Hyper Beam
-- Surf
-
-Milotic @ Sitrus Berry
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Blast
+- Spike Cannon
+- Liquidation
 - Recover
+
+Milotic @ Leftovers
+Level: 65
+Ability: Adaptability
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Surf
+- Moonblast
 - Ice Beam
-- Toxic
+- Recover
 
 === TRAINER_ANDREW ===
 Name: ANDREW
@@ -16778,7 +16784,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_STEVEN ===
 Name: STEVEN
-Class: Rival
+Class: CHAMPION
 Pic: Steven
 Gender: Male
 Music: Male
@@ -16786,53 +16792,59 @@ Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Skarmory
-Level: 77
+Skarmory @ Leftovers
+Level: 78
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Toxic
-- Aerial Ace
-- Spikes
-- Steel Wing
+- Stealth Rock
+- Drill Peck
+- Roost
 
-Claydol
-Level: 75
+Tyranitar @ Chople Berry
+Level: 78
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Reflect
-- Light Screen
-- Ancient Power
+- Stone Edge
+- Crunch
 - Earthquake
+- Dragon Dance
 
-Aggron
-Level: 76
+Aggron @ Assault Vest
+Level: 79
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Earthquake
-- Solar Beam
+- Iron Head
+- Stone Edge
+- Ice Punch
+- Thunder Punch
+
+Donphan @ Life Orb
+Level: 79
+Ability: Sand Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Headlong Rush
+- Close Combat
+- Rapid Spin
+- Knock Off
+
+Aerodactyl @ Focus Sash
+Level: 79
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Head Smash
+- Brave Bird
+- Iron Head
 - Dragon Claw
 
-Cradily
-Level: 76
+Metagross @ Air Balloon
+Level: 80
+Ability: Tough Claws
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Ancient Power
-- Ingrain
-- Confuse Ray
-
-Armaldo
-Level: 76
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Ancient Power
-- Aerial Ace
-- Slash
-
-Metagross @ Sitrus Berry
-Level: 78
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Psychic
 - Meteor Mash
-- Shadow Ball
+- Zen Headbutt
+- Hammer Arm
+- Ice Punch
 
 === TRAINER_ANABEL ===
 Name: ANABEL
