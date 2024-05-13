@@ -196,3 +196,73 @@ Route123_Text_RouteSignMtPyre:
 Route123_Text_BerryMastersHouse:
 	.string "BERRY MASTER'S HOUSE$"
 
+
+Route123_EventScript_TypeBerryMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_DAILY_TYPE_BERRIES, Route123_EventScript_BerriesGiven
+	msgbox Route123_Text_TypeBerryMan, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Route123_EventScript_PlayerAnsweredNo
+	msgbox Route123_Text_PlayerAnsweredYes, MSGBOX_DEFAULT
+	giveitem ITEM_OCCA_BERRY, 1
+	giveitem ITEM_PASSHO_BERRY, 1
+	giveitem ITEM_WACAN_BERRY, 1
+	giveitem ITEM_RINDO_BERRY, 1
+	giveitem ITEM_YACHE_BERRY, 1
+	giveitem ITEM_CHOPLE_BERRY, 1
+	giveitem ITEM_KEBIA_BERRY, 1
+	giveitem ITEM_SHUCA_BERRY, 1
+	giveitem ITEM_COBA_BERRY, 1
+	giveitem ITEM_PAYAPA_BERRY, 1
+	giveitem ITEM_TANGA_BERRY, 1
+	giveitem ITEM_CHARTI_BERRY, 1
+	giveitem ITEM_KASIB_BERRY, 1
+	giveitem ITEM_HABAN_BERRY, 1
+	giveitem ITEM_COLBUR_BERRY, 1
+	giveitem ITEM_BABIRI_BERRY, 1
+	giveitem ITEM_CHILAN_BERRY, 1
+	giveitem ITEM_ROSELI_BERRY, 1
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route123_Text_ReceivedBerries, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_DAILY_TYPE_BERRIES
+	release
+	end
+
+Route123_EventScript_BerriesGiven::
+	msgbox Route123_Text_BerriesGiven, MSGBOX_DEFAULT
+	release
+	end
+
+Route123_EventScript_PlayerAnsweredNo::
+	msgbox Route123_Text_PlayerAnsweredNo, MSGBOX_DEFAULT
+	release
+	end
+
+Route123_Text_TypeBerryMan:
+	.string "My Dad in there might call\n"
+	.string "himself The Berry Master but\l"
+	.string "did you know there are some\l"
+	.string "kinds of berry he doesn't like?\p"
+	.string "These berries often called type\n"
+	.string "berries. I think they're great!\p"
+	.string "I can give you one of each\n"
+	.string "every day if you want./p"
+	.string "Would you like some type/n"
+	.string "berries today?$"
+
+Route123_Text_PlayerAnsweredYes:
+	.string "Fantastic! I hope you can\n"
+	.string "enjoy them fully.$"
+
+Route123_Text_BerriesGiven:
+	.string "Come back torrrow for more\n"
+	.string "type berry goodness!$"
+
+Route123_Text_PlayerAnsweredNo:
+	.string "Oh, I guess you are one of\n"
+	.string "THOSE people...$"
+
+Route123_Text_ReceivedBerries:
+	.string "{PLAYER} received berries!$"
