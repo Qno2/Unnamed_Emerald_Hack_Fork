@@ -1245,7 +1245,7 @@
 #define FLAG_ITEM_TM73                                              0x4A9 // Thunder Wave TM
 #define FLAG_ITEM_TM74                                              0x4AA // Gyro Ball TM
 #define FLAG_ITEM_TM75                                              0x4AB // Swords Dance TM
-#define FLAG_ITEM_TM76                                              0x4AC // Stealth Rocks TM
+#define FLAG_ITEM_TM76                                              0x4AC // Stealth Rock TM
 #define FLAG_ITEM_TM77                                              0x4AD // Psych Up TM
 #define FLAG_ITEM_TM78                                              0x4AE // Captivate TM
 #define FLAG_ITEM_TM79                                              0x4AF // Dark Pulse TM
@@ -1299,10 +1299,10 @@
 #define FLAG_ITEM_ROUTE_119_PRISM_SCALE                             0x4DF // Prism scale on Route 119
 #define FLAG_ITEM_ROUTE_126_DEEPSEATOOTH                            0x4E0 // Deepseatooth underwater on Route 126
 #define FLAG_ITEM_ROUTE_124_DEEPSEASCALE                            0x4E1 // Deepseascale underwater on Route 124
-#define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
-#define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
-#define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
-#define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
+#define FLAG_ITEM_METEOR_FALLS_ABILITY_CAPSULE                      0x4E2 // Ability pill in Meteor Falls
+#define FLAG_ITEM_ROUTE_124_ABILITY_CAPSULE                         0x4E3 // Ability Pill on Route 124
+#define FLAG_ITEM_EVERGRANDECITY_ABILITY_CAPSULE                    0x4E4 // Ability pill in Evergrande City
+#define FLAG_ITEM_ROUTE_133_ABILITY_PATCH                           0x4E5 // Ability patch on Route 133
 #define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
 #define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
 #define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag

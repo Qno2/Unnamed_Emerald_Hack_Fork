@@ -489,7 +489,7 @@ Text_GivenStarters:
 	.string "Go get'em kid.$"
 
 OldaleTown_EventScript_CheatHouseSign::
-	msgbox OldaleTown_Text_CheatHouseSign, MSGBOX_DEFAULT
+	msgbox OldaleTown_Text_CheatHouseSign, MSGBOX_SIGN
 	end
 
 OldaleTown_Text_CheatHouseSign:
