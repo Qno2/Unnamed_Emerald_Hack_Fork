@@ -113,3 +113,36 @@ OldaleTown_House2_Text_GivingHeartScale:
 
 OldaleTown_House2_Text_GivenScale:
 	.string "I hope you don't need more.$"
+
+
+OldaleTown_House2_EventScript_ExpShare::
+	lock
+	faceplayer
+	msgbox OldaleTown_House2_Text_ExpShare, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq OldaleTown_House2_EventScript_YesToExpShare
+	setvar VAR_EXP_SHARE, 0
+	msgbox OldaleTown_House2_Text_ExpShare_No
+	release
+	end
+
+OldaleTown_House2_EventScript_YesToExpShare::
+	setvar VAR_EXP_SHARE, 1
+	msgbox OldaleTown_House2_Text_ExpShare_Yes
+	release
+	end
+
+OldaleTown_House2_Text_ExpShare:
+	.string "I can toggle the exp share\n"
+	.string "mechanic in the game for you.\p"
+	.string "Please be aware that the game\n"
+	.string "is balanced around this feature\l"
+	.string "being enabled, as it is by default.\p"
+	.string "Do you wish for the Exp Share to\n"
+	.string "be turned on?$"
+
+OldaleTown_House2_Text_ExpShare_No:
+	.string "Ok. The Exp Share is now off.$"
+
+OldaleTown_House2_Text_ExpShare_Yes:
+	.string "Ok. The Exp Share is now on.$"
