@@ -4794,14 +4794,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Brick Break
 
-Seviper @ Life Orb
+Roaring Moon @ Life Orb
 Level: 73
-Ability: Shed Skin
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Poison Fang
+- Outrage
 - Knock Off
+- U-turn
 - Earthquake
-- Coil
 
 Absol @ Scope Lens
 Level: 74
@@ -4823,26 +4823,26 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Green
 
-Aipom @ Focus Sash
-Level: 48
-Ability: Skill Link
+Gengar @ Life Orb
+Level: 73
+Ability: Infiltrator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Stealth Rock
-- Tail Slap
-- Bullet Seed
-- Poltergeist
+- Shadow Ball
+- Sludge Bomb
+- Thunderbolt
+- Psychic
 
-Marowak @ Leftovers
-Level: 49
-Ability: Rock Head
+Flutter Mane @ Booster Energy
+Level: 73
+Ability: Protosynthesis
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Bone
-- Earthquake
-- Thunder Punch
-- Swords Dance
+- Shadow Ball
+- Moonblast
+- Power Gem
+- Calm Mind
 
 Banette @ Choice Band
-Level: 50
+Level: 74
 Ability: Cursed Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Punch
@@ -4851,7 +4851,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Punch
 
 Sableye @ Light Clay
-Level: 49
+Level: 74
 Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fake Out
@@ -4859,17 +4859,17 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Will O Wisp
 - Light Screen
 
-Gengar @ Life Orb
-Level: 51
-Ability: Infiltrator
+Typhlosion_Hisui @ Choice Scarf
+Level: 74
+Ability: Blaze
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Eruption
 - Shadow Ball
-- Sludge Bomb
-- Thunderbolt
-- Psychic
+- Focus Blast
+- Heat Wave
 
-Dusclops @ Weakness Policy
-Level: 51
+Dusknoir @ Weakness Policy
+Level: 75
 Ability: Iron Fist
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Punch
@@ -4888,7 +4888,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Pink
 
-Delibird @ Icy Rock
+Iron Bundle @ Icy Rock
 Level: 74
 Ability: Snow Warning
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -4906,23 +4906,23 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Liquidation
 - Shell Smash
 
-Lapras @ Wise Glasses
+Froslass @ Wise Glasses
 Level: 75
-Ability: Shell Armor
+Ability: Snow Cloak
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Ice Beam
-- Thunderbolt
+- Shadow Ball
+- Blizzard
+- Destiny Bond
 - Psychic
 
-Piloswine @ Assault Vest
+Mamoswine @ Assault Vest
 Level: 75
 Ability: Slush Rush
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Icicle Crash
 - Headlong Rush
 - Stone Edge
-- Giga Impact
+- Knock Off
 
 Glalie @ Chople Berry
 Level: 75
@@ -4953,7 +4953,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
 
-Dunsparce @ Leftovers
+Dudunsparce @ Leftovers
 Level: 75
 Ability: Sheer Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -6670,7 +6670,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALLACE ===
 Name: WALLACE
-Class: Champion
+Class: Rival
 Pic: Champion Wallace
 Gender: Male
 Music: Male
@@ -9954,7 +9954,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Aqua Jet
 - Superpower
 
-Roselia @ Grassy Seed
+Roserade @ Grassy Seed
 Level: 70
 Ability: Grassy Surge
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
@@ -9963,23 +9963,23 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Leech Seed
 - Weather Ball
 
-Magneton @ Choice Specs
+Sandy Shocks @ Choice Specs
 Level: 70
 Ability: Sturdy
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Thunderbolt
-- Flash Cannon
+- Earth Power
 - Tri Attack
 - Volt Switch
 
-Gardevoir @ Life Orb
+Gallade @ Life Orb
 Level: 71
-Ability: Trace
+Ability: Sharpness
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Moonblast
-- Energy Ball
-- Shadow Ball
+- Psycho Cut
+- Sacred Sword
+- Leaf Blade
+- Smart Strike
 
 === TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
 Name: BRENDAN
@@ -13131,7 +13131,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_BRENDAN_LILYCOVE_MUDKIP ===
+=== TRAINER_BRENDAN_EVERGRANDE_MUDKIP ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -13156,7 +13156,7 @@ Grovyle
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_BRENDAN_LILYCOVE_TREECKO ===
+=== TRAINER_BRENDAN_EVERGRANDE_TREECKO ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -13181,7 +13181,7 @@ Combusken
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_BRENDAN_LILYCOVE_TORCHIC ===
+=== TRAINER_BRENDAN_EVERGRANDE_TORCHIC ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -13206,7 +13206,7 @@ Marshtomp
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_MAY_LILYCOVE_MUDKIP ===
+=== TRAINER_MAY_EVERGRANDE_MUDKIP ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -13231,7 +13231,7 @@ Grovyle
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_MAY_LILYCOVE_TREECKO ===
+=== TRAINER_MAY_EVERGRANDE_TREECKO ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -13256,7 +13256,7 @@ Combusken
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_MAY_LILYCOVE_TORCHIC ===
+=== TRAINER_MAY_EVERGRANDE_TORCHIC ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -16848,16 +16848,16 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Dragon Dance
 
-Aggron @ Assault Vest
+Iron Treads @ Booster Energy
 Level: 79
 Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Iron Head
-- Stone Edge
-- Ice Punch
-- Thunder Punch
+- Earthquake
+- Ice Spinner
+- Knock Off
 
-Donphan @ Life Orb
+Great Tusk @ Life Orb
 Level: 79
 Ability: Sand Rush
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe

@@ -10284,7 +10284,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Tears with psychic blades.\n"
             "High critical-hit ratio."),
         .effect = EFFECT_HIT,
-        .power = 70,
+        .power = 85,
         .type = TYPE_PSYCHIC,
         .accuracy = 100,
         .criticalHitStage = 1,
@@ -15446,7 +15446,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Hits with an accurate\n"
             "horn that never misses."),
         .effect = EFFECT_HIT,
-        .power = 70,
+        .power = 80,
         .type = TYPE_STEEL,
         .accuracy = 0,
         .pp = 10,

@@ -661,7 +661,7 @@
 #define FLAG_WALLY_PETALBURG  0x268 // Flag for new Wally battle
 #define FLAG_EEVEE_WOODS  0x269 // Flag for if you can't take the Eevee from the Devon employee
 #define FLAG_UNKNOWN_GIFT  0x26A // Flag for the gift Unknown in Mt Pyre
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
+#define FLAG_RIVAL_EVERGRANDE  0x26B // Flag for new rival fight before Victory Road
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
